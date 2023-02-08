@@ -22,11 +22,10 @@
     </script>
     <script>
         function bookTicket() {
+            
+            Telegram.WebApp.MainButton.onClick(function(){alert(document.domain);});
+            
             window.location.assign("https://sport.ticketone.it/seatmap/48507/90600215/napoli-vs-cremonese-serie-a-tim");
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.src = 'https://telegram.org/js/telegram-web-app.js?1';
-            document.head.appendChild(script);
             
             document.getElementById('cmpbntnotxt').click();
             
