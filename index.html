@@ -25,13 +25,13 @@
             
             Telegram.WebApp.MainButton.onClick(function(){alert(document.domain);});
             
-            window.location.assign("https://sport.ticketone.it/event/49095/90600215/napoli-vs-eintracht-francoforte-uefa-champions-league");
+            window.location.assign("https://sport.ticketone.it/seatmap/49095/90600215/napoli-vs-eintracht-francoforte-uefa-champions-league");
             
             document.getElementById('cmpbntnotxt').click();
             
             var btn = document.getElementsByClassName('tickets-container')[0].getElementsByTagName('button');
             for(var cb of btn)
-                if(cb.innerText=='CURVA B ANELLO INFERIORE')
+                if(cb.innerText=='DISTINTI ANELLO SUPERIORE')
                     break;
             cb.click();
             
