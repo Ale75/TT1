@@ -62,10 +62,11 @@
     <script> window.Telegram.WebApp.BackButton.show() </script>
     <script>
         Telegram.WebApp.onEvent('popupClosed', loadT1);
-        param.title="title"
-        param.message="message"
-        param.buttons=[{"type":"ok"}, {"type":"close"}]
-        Telegram.WebApp.showPopup(param,bookTicket)
+        var param;
+        param.title="title";
+        param.message="message";
+        param.buttons=[{"type":"ok"}, {"type":"close"}];
+        Telegram.WebApp.showPopup(param,bookTicket);
     </script>
 </body>
     
