@@ -58,6 +58,11 @@
             window.location.assign("https://sport.ticketone.it/seatmap/48508/90600215/napoli-vs-lazio-serie-a-tim");
         }
     </script>
+    <script>
+        function book(){
+            setTimeout(() => { bookTicket(); }, 5000);
+        }
+    </script>
 </head>
 
 <body>
@@ -70,7 +75,7 @@
             message:"message",
             buttons:[{"type":"ok"}, {"type":"close"}]
         };
-        Telegram.WebApp.showPopup(param, bookTicket);
+        Telegram.WebApp.showPopup(param, book);
     </script>
 </body>
     
