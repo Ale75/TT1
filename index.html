@@ -68,15 +68,7 @@
 <body>
     <script> window.Telegram.WebApp.MainButton.setText('Buy!').show()</script>
     <script> window.Telegram.WebApp.BackButton.show() </script>
-    <script>
-        Telegram.WebApp.onEvent('popupClosed', loadT1);
-        param ={
-            title:"title",
-            message:"message",
-            buttons:[{"type":"ok"}, {"type":"close"}]
-        };
-        Telegram.WebApp.showPopup(param, book);
-    </script>
+    <script> window.Telegram.WebApp.onEvent('backButtonClicked', bookTicket()) </script>
 </body>
     
 </html>
