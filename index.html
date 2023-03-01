@@ -57,16 +57,17 @@
         function open(){
             window.location.assign("https://sport.ticketone.it/seatmap/48508/90600215/napoli-vs-lazio-serie-a-tim");
         }
-        Telegram.WebApp.onEvent('invoiceClosed', open());
+        //Telegram.WebApp.onEvent('invoiceClosed', open());
+    </script>
+    <script> //window.Telegram.WebApp.openInvoice("https://t.me/$iF51NB-r-UtfBAAAEUKzE9jRd_E",function(){
+            //alert(document.domain);
+        //});
     </script>
 </head>
 
 <body>
     <script> Telegram.WebApp.MainButton.setText('Buy!').show()</script>
-    <script> window.Telegram.WebApp.openInvoice("https://t.me/$iF51NB-r-UtfBAAAEUKzE9jRd_E",function(){
-            alert(document.domain);
-        });
-    </script>
+    <script> Telegram.WebApp.showPopup(param)</script>
 </body>
     
 </html>
