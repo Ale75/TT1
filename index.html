@@ -19,6 +19,7 @@
         }
         Telegram.WebApp.onEvent('themeChanged', setThemeClass);
         setThemeClass();
+        Telegram.WebApp.onEvent('invoiceClosed', open());
     </script>
     <script>
         function bookTicket() {
@@ -61,9 +62,7 @@
 </head>
 
 <body>
-    <script> Telegram.WebApp.MainButton.setText('Buy!').show()
-             Telegram.WebApp.onEvent('invoiceClosed', open());
-    </script>
+    <script> Telegram.WebApp.MainButton.setText('Buy!').show()</script>
     <script> window.Telegram.WebApp.openInvoice("https://t.me/$iF51NB-r-UtfBAAAEUKzE9jRd_E",function(){
             setalert(document.domain);
         });
