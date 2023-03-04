@@ -22,7 +22,9 @@
     </script>
     <script>
         function bookTicket() {
-            alert(document.domain);
+            //var xmlhttp = new XMLHttpRequest();
+            //xmlhttp.open("GET",URL,true);
+            //xmlhttp.send();
             
             //Telegram.WebApp.MainButton.onClick(function(){alert(document.domain);});
             
@@ -54,9 +56,9 @@
         }
     </script>
     <script>
-        function open(){
-            window.location.assign("https://sport.ticketone.it/seatmap/48508/90600215/napoli-vs-lazio-serie-a-tim");
-        }
+        //function open(){
+        //    window.location.assign("https://sport.ticketone.it/seatmap/48508/90600215/napoli-vs-lazio-serie-a-tim");
+        //}
         //Telegram.WebApp.onEvent('invoiceClosed', open());
     </script>
     <script> //window.Telegram.WebApp.openInvoice("https://t.me/$iF51NB-r-UtfBAAAEUKzE9jRd_E",function(){
@@ -67,7 +69,7 @@
 
 <body>
     <script> Telegram.WebApp.MainButton.setText('Buy!').show()</script>
-    <script> Telegram.WebApp.showPopup(param)</script>
+    <script> Telegram.WebApp.MainButton.onClick(bookTicket())</script>
 </body>
     
 </html>
